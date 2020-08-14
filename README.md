@@ -20,7 +20,7 @@ A Colorado Board of Elections employee has given you the following tasks to comp
   https://colab.research.google.com/notebooks/intro.ipynb
   
 ## Summary 
-The [analysis of the election](Election_Analysis.png) show that:
+The [analysis of the election](Election_Results.png) show that:
 - There were 369,711 votes cast in the election.
 - The candidates were:
   - Charles Casper Stockham
@@ -40,7 +40,7 @@ The Colorado Elections Commission has requested an audit of county voter turnout
   3. The county with the higest turnout.
 
 ## Challenge Summary
-The [analysis of the election](Election_Analysis.png) shows that:
+The [analysis of the election](Election_Results.png) shows that:
 - There were 369,711 votes cast in the election.
 - The counties were:
   - Jefferson
@@ -55,3 +55,16 @@ The [analysis of the election](Election_Analysis.png) shows that:
   
 As a practice exercise, this analysis was executed in both [VScode](https://code.visualstudio.com/) and [Google Colab](https://colab.research.google.com/notebooks/intro.ipynb).
 [PyPoll_Challenge script used for entire analysis](PyPoll_Challenge.py).
+Equivalent logic was used for both candidate & county summaries.  Key portion for determining winning candidate and largest county turnout was:
+        ```
+        if (votes > largest_county_turnout) and (vote_percentage > largest_county_percentage):
+            largest_county_turnout = votes
+            largest_county = county_name
+            largest_county_percentage = vote_percentage
+        ```
+## Future Consideration
+This python script could be adapted for any election outcome.  In this case, it was used to determine winning candidate of state congressional election & county turnout.  
+Examples:
+1. Ballot ID could be checked to confirm no duplicate counts by comparing each individual Ballot against entire list.
+2. This data was limited and only included 3 counties and 3 candidates, but the loops used to go through the list is not necessarily limited to this small set.  If election results were available for all 50 states or all counties in a given state, the same logic can still be applied.
+3.  Winning candidate in each county.  Rather than just looping through entire list, nested loops would allow us to provide a candidate vote total for each county in the entire list so a breakdown could be provided to see winning candidate in each county versus overall winning candidate.
