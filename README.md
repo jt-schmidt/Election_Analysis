@@ -12,7 +12,7 @@ A Colorado Board of Elections employee has given you the following tasks to comp
 5.  Determine the winner of the elction based on popular vote.
 
 ## Resources
-- Data Source:  election_results.csv
+- Data Source:  [election_results.csv](election_results.csv)
 - Software:  
   Python 3.8.3 
   Visual Studio Code 1.47.3 (user setup)
@@ -20,7 +20,7 @@ A Colorado Board of Elections employee has given you the following tasks to comp
   https://colab.research.google.com/notebooks/intro.ipynb
   
 ## Summary 
-The analys of the election show that:
+The [analysis of the election](Election_Analysis.png) show that:
 - There were 369,711 votes cast in the election.
 - The candidates were:
   - Charles Casper Stockham
@@ -40,7 +40,7 @@ The Colorado Elections Commission has requested an audit of county voter turnout
   3. The county with the higest turnout.
 
 ## Challenge Summary
-The analysis of the election show that:
+The [analysis of the election](Election_Analysis.png) shows that:
 - There were 369,711 votes cast in the election.
 - The counties were:
   - Jefferson
@@ -52,3 +52,6 @@ The analysis of the election show that:
   - Arapahoe produced 6.7% of the turnout and 24,801 votes.
 - The largest county voter turnout was:
   - Denver, which produced 82.8% of the vote and 306,055 votes.
+  
+As a practice exercise, this analysis was executed in both [VScode](https://code.visualstudio.com/) and [Google Colab](https://colab.research.google.com/notebooks/intro.ipynb).
+[PyPoll_Challenge script used for entire analysis](PyPoll_Challenge.py).
