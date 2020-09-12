@@ -57,7 +57,7 @@ As a practice exercise, this analysis was executed in both [VScode](https://code
 [PyPoll_Challenge script used for entire analysis](PyPoll_Challenge.py).
 Equivalent logic was used for both candidate & county summaries.  Key portion for determining winning candidate and largest county turnout was:
 
-```
+```python
 if (votes > largest_county_turnout) and (vote_percentage > largest_county_percentage):
     largest_county_turnout = votes
     largest_county = county_name
